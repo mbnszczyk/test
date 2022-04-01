@@ -1,9 +1,8 @@
 ---
-- name: tworzenie pliku
-  hosts: 192.168.56.136
 
+- hosts: 192.168.56.136
   tasks:
-
-  - name: tworzenie pliku
-    file:  "/tmp/test01042022"
-    state: touch
+  - name: Creating an empty file
+    file:
+      path: "/tmo/plik"
+      state: touch
