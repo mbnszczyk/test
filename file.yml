@@ -4,5 +4,5 @@
   tasks:
   - name: Creating an empty file
     file:
-      path: "/tmo/plik"
+      path: "/tmp/plik"
       state: touch
