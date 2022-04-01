@@ -1,0 +1,9 @@
+---
+- name: Hello World!
+  hosts: 192.168.56.136
+
+  tasks:
+
+  - name: tworzenie pliku
+    file:  /tmp/test01042022
+    state: touch
