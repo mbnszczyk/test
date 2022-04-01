@@ -1,5 +1,5 @@
 ---
-- name: Hello World!
+- name: tworzenie pliku
   hosts: 192.168.56.136
 
   tasks:
