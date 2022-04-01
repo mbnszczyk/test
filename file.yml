@@ -5,5 +5,5 @@
   tasks:
 
   - name: tworzenie pliku
-    file:  /tmp/test01042022
+    file:  "/tmp/test01042022"
     state: touch
