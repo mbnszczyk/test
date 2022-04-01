@@ -2,7 +2,12 @@
 
 - hosts: 192.168.56.136
   tasks:
-  - name: Creating an empty file
-    file:
-      path: "/tmp/plik"
+  - name: Create multiple files
+    file: 
+      path: "{{ item }}"
       state: touch
+    with_items:
+    - test01.txt
+    - test02.txt
+    - test03.txt
+    - test04.txt
